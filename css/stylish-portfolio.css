@@ -2,6 +2,7 @@
  * Start Bootstrap - Stylish Portfolio v5.0.7 (https://startbootstrap.com/template-overviews/stylish-portfolio)
  * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-stylish-portfolio/blob/master/LICENSE)
+ * headerBackground (blue-light.jpg) image is used from unsplash. Credits to Joakim Honkasalo at unsplash for the image.
  */
 
 body,
@@ -85,7 +86,12 @@ h6 {
   font-weight: 800;
 }
 
-.masthead {
+.about-section {
+  padding-top: 10rem;
+  background: linear-gradient(to bottom, #000147 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+.headerBackground {
   min-height: 30rem;
   position: relative;
   display: table;
@@ -93,23 +99,23 @@ h6 {
   height: auto;
   padding-top: 8rem;
   padding-bottom: 8rem;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/bg-masthead.jpg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000147 100%), url("../img/blue-light.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.masthead h1 {
+.headerBackground h1 {
   font-size: 4rem;
   margin: 0;
   padding: 0;
 }
 
 @media (min-width: 992px) {
-  .masthead {
+  .headerBackground {
     height: 100vh;
   }
-  .masthead h1 {
+  .headerBackground h1 {
     font-size: 5.5rem;
   }
 }
@@ -123,7 +129,7 @@ h6 {
   height: 100%;
   transition: all 0.4s ease 0s;
   transform: translateX(250px);
-  background: #1D809F;
+  background: #104290;
   border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
 
