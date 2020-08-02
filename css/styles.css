@@ -24,7 +24,7 @@
   --white: #fff;
   --gray: #6c757d;
   --gray-dark: #343a40;
-  --primary: #bd5d38;
+  --primary: #070e17;
   --secondary: #6c757d;
   --success: #28a745;
   --info: #17a2b8;
@@ -574,6 +574,7 @@ pre code {
   padding-left: 0.75rem;
   margin-right: auto;
   margin-left: auto;
+  background-color: #D3D3D3;
 }
 
 @media (min-width: 576px) {
@@ -6097,7 +6098,7 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: #bd5d38 !important;
+  background-color: #070e17 !important;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
@@ -6225,7 +6226,7 @@ button.bg-dark:focus {
 }
 
 .border-primary {
-  border-color: #bd5d38 !important;
+  border-color: #070e17 !important;
 }
 
 .border-secondary {
