@@ -39,4 +39,24 @@
     $("body").scrollspy({
         target: "#sideNav",
     });
+
+    // playing all versions of CA2dGA in one video tag.
+    var CAVideos = document.getElementById('CA2dGA'); // grabbing the video tag id to play all the related videos in one video tag.
+
+    // array for different versions of the simulation for Covid-19 spread.
+    var versions = [
+        "assets/videos/CA2dOneVariantDeterministic.mp4",
+        "assets/videos/CA2dOneVariantNonDeterministic.mp4",
+        "assets/videos/CA2dTwoVariantsWithoutGA.mp4",
+        "assets/videos/CA2dTwoVariantsWithGA.mp4"
+    ];
+    var activeVideo = 0;
+
+    // adding event listener so it could play all videos after another.
+    CAVideos.addEventListener('ended', function(e) {
+        activeVideo = (++activeVideo) % versions.length;
+        CAVideos.src = versions[activeVideo];
+        CAVideos.play();
+    });
+    
 })(jQuery); // End of use strict

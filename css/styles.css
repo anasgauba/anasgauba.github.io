@@ -479,6 +479,12 @@ mark,
   height: auto;
 }
 
+.video-fluid {
+  max-width: 356px;
+  height: 217px;
+  object-fit: fill;
+}
+
 .img-thumbnail {
   padding: 0.25rem;
   background-color: #fff;
@@ -10133,4 +10139,32 @@ section.resume-section .resume-section-content {
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
+}
+
+/*
+ * Styling for portfolio section.
+*/
+
+.portfolio-section .portfolio-project {
+  margin-bottom: 30px;
+}
+
+.portfolio .portfolio-project-info {
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.portfolio .portfolio-project-info::after {
+  content: "";
+  background: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transition: all ease-in-out 0.3s;
+  z-index: 2;
+  opacity: 0;
 }
