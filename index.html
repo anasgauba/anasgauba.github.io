@@ -76,22 +76,27 @@ Copyright 2013-2020 Start Bootstrap LLC. Code released under the [MIT](https://g
             <!-- Portfolio-->
             <section class="portfolio-section" id="portfolio">
                 <div class="container">
-                    <h2 class="mb-5">Portfolio</h2>                    
+                    <h2 class="mb-5">Portfolio</h2>
 
                     <!-- add projects in this portfolio section. -->
                     <div class="row">
+                        <!-- Adding explicit video dimension styling here as css class="video-fluid" is not working for some reason. -->
                         <div class="col-lg-4 col-md-6 portfolio-project">
                             <div class="portfolio-project-info">
-                                <h4>Cretaceous Gardens Controller</h4>
-                                <video class="video-fluid" height="216.48" src="assets/videos/cgc-simulation.mp4" muted loop autoplay controls></video>                                
+                                <h4>Agent-Based Model for Covid-19 Screening</h4>
+                                <video width="356px" height="217px" style="object-fit: fill;" src="assets/videos/abem-simulation.mp4" muted loop autoplay controls></video>
                             </div>
-                        </div>                        
+                        </div>
                         <div class="col-lg-4 col-md-6 portfolio-project">
                             <div class="portfolio-project-info">
                                 <h4>Covid-19 Spread and Evolution</h4>
-                                <!-- Adding explicit video dimension here (to keep the same width and height as in other videos)
-                                     since class="video-fluid" is not working for some reason. -->
-                                <video id="CA2dGA" width="356px" height="217px" style="object-fit: fill;" src="assets/videos/CA2dOneVariantDeterministic.mp4" muted autoplay controls></video>                                
+                                <video id="CA2dGA" width="356px" height="217px" style="object-fit: fill;" src="assets/videos/CA2dOneVariantDeterministic.mp4" muted autoplay controls></video>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 portfolio-project">
+                            <div class="portfolio-project-info">
+                                <h4>Cretaceous Gardens Controller</h4>
+                                <video class="video-fluid" src="assets/videos/cgc-simulation.mp4" muted loop autoplay controls></video>
                             </div>
                         </div>
                     </div>
