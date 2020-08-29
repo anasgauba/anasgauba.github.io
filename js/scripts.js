@@ -50,13 +50,28 @@
         "assets/videos/CA2dTwoVariantsWithoutGA.mp4",
         "assets/videos/CA2dTwoVariantsWithGA.mp4"
     ];
-    var activeVideo = 0;
+    var activeCAVideo = 0;
 
     // adding event listener so it could play all videos after another.
     CAVideos.addEventListener('ended', function(e) {
-        activeVideo = (++activeVideo) % versions.length;
-        CAVideos.src = versions[activeVideo];
+        activeCAVideo = (++activeCAVideo) % versions.length;
+        CAVideos.src = versions[activeCAVideo];
         CAVideos.play();
     });
-    
+
+    var mobileAgentsVideo = document.getElementById('Mobile-Agents');
+    // add array of different video clips for mobile-agents.
+    var mobileAgentsGraphs = [
+        "assets/videos/mobile-agents-g1.mp4",
+        "assets/videos/mobile-agents-g2.mp4",
+    ];
+    var activeMAVideo = 0;
+
+    // adding event listener to MobileAgents project videos.
+    mobileAgentsVideo.addEventListener('ended', function(e) {
+        activeMAVideo = (++activeMAVideo) % mobileAgentsGraphs.length;
+        mobileAgentsVideo.src = mobileAgentsGraphs[activeMAVideo];
+        mobileAgentsVideo.play();
+    })
+
 })(jQuery); // End of use strict
